@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pomodoro on 凱爾鹿數位生活</title>
-    <link>https://example.org/tags/pomodoro/</link>
+    <link>kylelu.com/tags/pomodoro/</link>
     <description>Recent content in pomodoro on 凱爾鹿數位生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Mon, 09 Oct 2023 04:52:22 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/pomodoro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="kylelu.com/tags/pomodoro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>番茄鐘 – 專注草原｜Timer, Player</title>
-      <link>https://example.org/2023/10/09/pomodoro-timer-focus-on-wild/</link>
+      <link>kylelu.com/2023/10/09/pomodoro-timer-focus-on-wild/</link>
       <pubDate>Mon, 09 Oct 2023 04:52:22 +0000</pubDate>
-      <guid>https://example.org/2023/10/09/pomodoro-timer-focus-on-wild/</guid>
+      <guid>kylelu.com/2023/10/09/pomodoro-timer-focus-on-wild/</guid>
       <description>&lt;p&gt;一款簡約的番茄鐘 APP，讓你在令人心曠神怡的專注草原上，每次前進一小步，並在蟲鳴鳥叫聲中小憩片刻。&lt;/p&gt;</description>
     </item>
   </channel>

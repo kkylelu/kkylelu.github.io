@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>摘要重點 on 凱爾鹿數位生活</title>
-    <link>https://example.org/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/</link>
+    <link>kylelu.com/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/</link>
     <description>Recent content in 摘要重點 on 凱爾鹿數位生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Sat, 22 Jul 2023 17:27:33 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="kylelu.com/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>千言萬語不如一張表｜請 ChatGPT 整理表格講重點</title>
-      <link>https://example.org/2023-07-23-ask-chatgpt-to-sort-out-the-table/</link>
+      <link>kylelu.com/2023-07-23-ask-chatgpt-to-sort-out-the-table/</link>
       <pubDate>Sat, 22 Jul 2023 17:27:33 +0000</pubDate>
-      <guid>https://example.org/2023-07-23-ask-chatgpt-to-sort-out-the-table/</guid>
+      <guid>kylelu.com/2023-07-23-ask-chatgpt-to-sort-out-the-table/</guid>
       <description>&lt;p&gt;比起長篇大論，想快速掌握重點時，可以請 ChatGPT 直接整理表格給我們。&lt;/p&gt;</description>
     </item>
   </channel>
