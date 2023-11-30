@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Swift 學習筆記：基本型別、初學者資源",
+  
+  "image": "https://example.org/images/K.Lu-230803.avif",
+  
+  "datePublished": "2023-08-03T15:31:54Z",
+  "dateModified": "2023-08-03T15:31:54Z",
+  "author": {
+    "@type": "Person",
+    "name": "Kyle Lu｜凱爾鹿",
+    
+    "image": "https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/example.org\/2023\/08\/03\/swift-data-type-beginners-resources\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "凱爾鹿數位生活",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574"
+    }
+    
+  },
+  "description": "開始決定學習程式語言 Swift 後，我先問 ChatGPT 如何學好這門程式語言，它的建議是：\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.120.4 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Kyle Lu｜凱爾鹿">
+<meta name="keywords" content="">
+<meta name="description" content="開始決定學習程式語言 Swift 後，我先問 ChatGPT 如何學好這門程式語言，它的建議是：">
+
+
+<meta property="og:description" content="開始決定學習程式語言 Swift 後，我先問 ChatGPT 如何學好這門程式語言，它的建議是：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift 學習筆記：基本型別、初學者資源">
+<meta name="twitter:title" content="Swift 學習筆記：基本型別、初學者資源">
+<meta property="og:url" content="https://example.org/2023/08/03/swift-data-type-beginners-resources/">
+<meta property="twitter:url" content="https://example.org/2023/08/03/swift-data-type-beginners-resources/">
+<meta property="og:site_name" content="凱爾鹿數位生活">
+<meta property="og:description" content="開始決定學習程式語言 Swift 後，我先問 ChatGPT 如何學好這門程式語言，它的建議是：">
+<meta name="twitter:description" content="開始決定學習程式語言 Swift 後，我先問 ChatGPT 如何學好這門程式語言，它的建議是：">
+<meta property="og:locale" content="zh-tw">
+
+  
+    <meta property="article:published_time" content="2023-08-03T15:31:54">
+  
+  
+    <meta property="article:modified_time" content="2023-08-03T15:31:54">
+  
+  
+  
+    
+      <meta property="article:section" content="Swift 學習筆記">
+    
+      <meta property="article:section" content="科技">
+    
+  
+  
+    
+      <meta property="article:tag" content="ios">
+    
+      <meta property="article:tag" content="swift">
+    
+      <meta property="article:tag" content="學習資源">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=640">
+
+
+
+
+
+  <meta property="og:image" content="https://example.org/images/K.Lu-230803.avif">
+  <meta property="twitter:image" content="https://example.org/images/K.Lu-230803.avif">
+
+
+    <title>Swift 學習筆記：基本型別、初學者資源</title>
+
+    <link rel="icon" href="https://example.org/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://example.org/2023/08/03/swift-data-type-beginners-resources/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://example.org/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://example.org/" aria-label="去首頁">凱爾鹿數位生活</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://example.org/#about" aria-label="打開鏈接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=90" alt="作者的圖片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://example.org/#about" aria-label="閱讀有關作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=110" alt="作者的圖片" />
+        </a>
+        <h4 class="sidebar-profile-name">Kyle Lu｜凱爾鹿</h4>
+        
+          <h5 class="sidebar-profile-bio">培養思維、掌握工具，打造滿意生活</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首頁</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分類</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">標籤</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">所有文章</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">關於</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kkylelu" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:hi@kylelu.com" target="_blank" rel="noopener" title="Email">
+    
+      <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Email</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Atom</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      Swift 學習筆記：基本型別、初學者資源
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-08-03T15:31:54Z">
+        
+  八月 3, 2023
+
+      </time>
+    
+    
+  
+  
+    <span>分類</span>
+    
+      <a class="category-link" href="https://example.org/categories/swift-%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">Swift 學習筆記</a>, 
+    
+      <a class="category-link" href="https://example.org/categories/%e7%a7%91%e6%8a%80">科技</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>開始決定學習程式語言 Swift 後，我先問 ChatGPT 如何學好這門程式語言，它的建議是：</p>
+<p><img src="https://example.org/images/K.Lu-230803.avif" alt=""></p>
+<h1 id="table-of-contents">目錄</h1>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#swift-四大學習點">Swift 四大學習點</a></li>
+        <li><a href="#初學者資源">初學者資源</a>
+          <ul>
+            <li><a href="#遊戲化學習">遊戲化學習</a></li>
+            <li><a href="#生活化舉例">生活化舉例</a></li>
+            <li><a href="#參考書籍">參考書籍</a></li>
+          </ul>
+        </li>
+        <li><a href="#目前學到的知識點">目前學到的知識點</a></li>
+        <li><a href="#問題點紀錄">問題點紀錄</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<ol>
+<li><strong>學習 Swift 語言</strong><br>
+Swift 是 Apple 的程式語言，用於開發 iOS、macOS、watchOS 和 tvOS 應用程式。你可以從 Apple 的 <strong><a href="https://www.apple.com/tw/swift/playgrounds/">Swift Playgrounds</a></strong> 或者線上教學平台如 <strong><a href="https://www.codecademy.com/learn/learn-swift">Codecademy</a></strong>、<strong><a href="https://www.udemy.com/topic/swift/">Udemy</a></strong> 等學習 Swift。</li>
+<li><strong>熟悉 Xcode</strong><br>
+Xcode 是 Apple 的開發工具，你將在這裡撰寫程式碼、設計使用者介面、測試應用程式等。你可以在 Apple 的 <strong><a href="https://developer.apple.com/xcode/resources/">Xcode 資源頁面</a></strong> 找到相關的教學資源。</li>
+<li><strong>學習基本的 iOS 開發概念</strong><br>
+這包括了瞭解 MVC（Model-View-Controller）架構、學習如何使用 UIKit 或 SwiftUI 來設計使用者介面、瞭解如何使用 Core Data 來儲存資料等。</li>
+<li><strong>實作專案</strong><br>
+透過實作專案來學習是非常有效的方式。你可以從簡單的專案開始，例如製作一個計算機或者天氣應用程式，然後逐漸嘗試更複雜的專案。</li>
+<li><strong>閱讀官方文件和參考資源</strong><br>
+Apple 提供了非常完整的 <strong><a href="https://developer.apple.com/documentation/">開發者文件</a></strong>，這是一個很好的學習資源。</li>
+<li><strong>參加社區和學習小組</strong><br>
+參加一些 iOS 開發者的社區，例如 <strong><a href="https://stackoverflow.com/questions/tagged/ios">Stack Overflow</a></strong>、<strong><a href="https://iosdevweekly.com/">iOS Dev Weekly</a></strong>、<strong>&lt;Swift.org&gt; <a href="https://forums.swift.org/">Forums</a></strong> 等，可以讓你有機會學習到最新的開發技術和趨勢，並且可以在遇到問題時尋求幫助。</li>
+<li><strong>持續學習和實踐</strong><br>
+iOS 開發是一個持續學習和實踐的過程。Apple 每年都會更新他們的作業系統和開發工具，因此你需要持續學習來跟上最新的開發技術和趨勢。</li>
+</ol>
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="swift-四大學習點">Swift 四大學習點</h2>
+<p>根據上述，我開始找相關學習資源，意外發現<a href="https://medium.com/@apppeterpan?source=---two_column_layout_sidebar----------------------------------">彼得潘</a>提到 Swift 有四大學習點：</p>
+<ol>
+<li>變數：var</li>
+<li>運算：加減乘除、整數、負數</li>
+<li>條件：if else</li>
+<li>迴圈：for, while</li>
+</ol>
+<p>這提供我明確的學習方向，在找相關學習資源時，就會特別留意這方面的解說。<!-- raw HTML omitted --></p>
+<p><img src="%E5%9B%9B%E5%A4%A7%E5%AD%B8%E7%BF%92%E8%80%85-2023-08-03-at-23.41.18.avif" alt="">
+<em>Swift 四大學習點：變數、運算、條件、迴圈</em></p>
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="初學者資源">初學者資源</h2>
+<p>我從以下 3 項學習資源，了解 Swift 的上述知識點基本觀念</p>
+<h3 class="wp-block-heading" id="遊戲化學習">遊戲化學習</h3>
+<p><a href="https://www.apple.com/tw/swift/playgrounds/">Swift Playgrounds</a><br>
+想要最直覺看到程式碼「動起來」，就玩 Apple 官方出品的 Swift Playgrounds ，結合闖關和解謎要素，可以根據關卡目標，了解指令、函數、條件…等應用，真的卡關也可以看提示說明，反思自己可以改進的地方。</p>
+<p><img src="playground-2023-07-30-at-16.16.02.avif" alt="">
+<em>Swift Playgrounds 可以從遊戲中很直覺學習程式碼的作用</em></p>
+<h3 class="wp-block-heading" id="生活化舉例">生活化舉例</h3>
+<p><a href="https://www.udemy.com/course/swift-5-programming-bootcamp-for-beginners/">Swift 5 Programming Bootcamp For Beginners</a><br>
+用射擊遊戲、APP 登入畫面、做 Pizza 等生活化的舉例，因此雖然是英文語音，但老師語速很慢，搭配字幕反覆看很好理解。</p>
+<p><img src="swift-5-for-beginngers-2023-08-03-at-23.00.31.avif" alt="">
+<em>Swift 5 Programming Bootcamp For Beginners以射擊遊戲說明程式碼</em></p>
+<h3 class="wp-block-heading" id="參考書籍">參考書籍</h3>
+<p><a href="https://www.appcoda.com.tw/swift/">iOS 16 App 程式設計實戰心法</a><br>
+參考網友評價、比較目前市面最新 swift 教學書和翻看試閱本後，我買了這本電子書作為上述網路資源的輔助，除了因為作者教學讓我比較能理解以外，更棒的是它提供了 swiftUI 和 UIkit 兩種版本教學，還加贈一年更新，也就是未來 iOS 17 推出後，也可以獲得更新後的電子書內容。我想先從 UIkit 學起，這樣之後想學 swiftUI 也可以參考本書。</p>
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="目前學到的知識點">目前學到的知識點</h2>
+<p>目前已經學習完 Swift Playgrounds 的體驗課程和 Swift 5 Programming Bootcamp For Beginners，整理學習到的知識點如下：<!-- raw HTML omitted --></p>
+<table>
+<thead>
+<tr>
+<th>型別</th>
+<th>名詞</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>var</td>
+<td>變數</td>
+<td>– int 整數：例如 0,1,2,100</td>
+</tr>
+<tr>
+<td>– Double 浮點數：例如 1.34, 2.9</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>– String 字串：可以放名字、訊息、文章</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>let</td>
+<td>常數</td>
+<td>指定後就不能更改</td>
+</tr>
+<tr>
+<td>for</td>
+<td>迴圈</td>
+<td>執行一定次數後停止</td>
+</tr>
+<tr>
+<td>while</td>
+<td>迴圈</td>
+<td>直到滿足條件才停止</td>
+</tr>
+<tr>
+<td>If else</td>
+<td>條件</td>
+<td>滿足特定條件採取動作</td>
+</tr>
+<tr>
+<td>func</td>
+<td>功能</td>
+<td>function 的縮寫，它是一件任務或工作的描述，可以打包一系列動作。</td>
+</tr>
+<tr>
+<td>//</td>
+<td>註解</td>
+<td>在程式碼中不會被執行的說明文字</td>
+</tr>
+<tr>
+<td>!</td>
+<td>邏輯運算子</td>
+<td>NOT 反轉值，如果程式碼為 != 就是「不等於」的意思。</td>
+</tr>
+</tbody>
+</table>
+<p>除此之外為了要保持程式碼的可讀性，需要注意「camelCase」（駝峰式大小寫）</p>
+<p>命名長串字母，要像駱駝的駝峰一樣，有大寫小寫字母，但第一個字一定是小寫，例如：</p>
+<table>
+<thead>
+<tr>
+<th>正確</th>
+<th>錯誤</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>loginButton</td>
+<td>loginbutton</td>
+</tr>
+<tr>
+<td>firstName</td>
+<td>Firstname</td>
+</tr>
+<tr>
+<td><em>表格舉例</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<!-- raw HTML omitted -->
+<h2 class="wp-block-heading" id="問題點紀錄">問題點紀錄</h2>
+<p>在學到 func 可以結合 return 使用時，腦袋一時轉不過來。</p>
+<p>既然可以用 func 執行 task，為什麼需要 return？</p>
+<p>舉例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">caluclateSomeStuff</span>() -&gt; Int {
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> value1 = <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> value2 = <span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> result = value1 <span style="color:#f92672">+</span> value2
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> result
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> resultFromTheFunction = caluclateSomeStuff()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(resultFromTheFunction)
+</span></span></code></pre></div><p>原來是在我們需要得知「執行後的結果」，或是進一步處理時，可以使用，以生活化的例子舉例就會是這樣：</p>
+<table>
+<thead>
+<tr>
+<th>Data type</th>
+<th>餐廳情境</th>
+<th>辦公室情境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>func</td>
+<td>內場做完餐點</td>
+<td>交辦助理做事</td>
+</tr>
+<tr>
+<td>return</td>
+<td>提供給客人</td>
+<td>完成之後提供書面報告</td>
+</tr>
+</tbody>
+</table>
+<p>接下來想試著做一些簡單的練習，試著整合目前學到的知識點。</p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">標籤</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://example.org/tags/ios/">ios</a>
+
+  <a class="tag tag--primary tag--small" href="https://example.org/tags/swift/">swift</a>
+
+  <a class="tag tag--primary tag--small" href="https://example.org/tags/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90/">學習資源</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2023/08/21/googlemaps-for-ios/" data-tooltip="如何在 iOS APP 加入 Google map？｜Google Maps for iOS 串接練習" aria-label="下一篇: 如何在 iOS APP 加入 Google map？｜Google Maps for iOS 串接練習">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2023-07-23-ask-chatgpt-to-sort-out-the-table/" data-tooltip="千言萬語不如一張表｜請 ChatGPT 整理表格講重點" aria-label="上一篇: 千言萬語不如一張表｜請 ChatGPT 整理表格講重點">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/2023/08/03/swift-data-type-beginners-resources/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/2023/08/03/swift-data-type-beginners-resources/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.org/2023/08/03/swift-data-type-beginners-resources/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/example.org\/2023\/08\/03\/swift-data-type-beginners-resources\/';
+        
+          this.page.identifier = '\/2023\/08\/03\/swift-data-type-beginners-resources\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 Kyle Lu｜凱爾鹿. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2023/08/21/googlemaps-for-ios/" data-tooltip="如何在 iOS APP 加入 Google map？｜Google Maps for iOS 串接練習" aria-label="下一篇: 如何在 iOS APP 加入 Google map？｜Google Maps for iOS 串接練習">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2023-07-23-ask-chatgpt-to-sort-out-the-table/" data-tooltip="千言萬語不如一張表｜請 ChatGPT 整理表格講重點" aria-label="上一篇: 千言萬語不如一張表｜請 ChatGPT 整理表格講重點">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/2023/08/03/swift-data-type-beginners-resources/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/2023/08/03/swift-data-type-beginners-resources/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.org/2023/08/03/swift-data-type-beginners-resources/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.org%2F2023%2F08%2F03%2Fswift-data-type-beginners-resources%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fexample.org%2F2023%2F08%2F03%2Fswift-data-type-beginners-resources%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fexample.org%2F2023%2F08%2F03%2Fswift-data-type-beginners-resources%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=110" alt="作者的圖片" />
+    
+    <h4 id="about-card-name">Kyle Lu｜凱爾鹿</h4>
+    
+      <div id="about-card-bio">培養思維、掌握工具，打造滿意生活</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Problem solver
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Taipei
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://example.org/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://example.org/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

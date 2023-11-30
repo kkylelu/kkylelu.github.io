@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>學習資源 on 凱爾鹿數位生活</title>
+    <link>https://example.org/tags/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90/</link>
+    <description>Recent content in 學習資源 on 凱爾鹿數位生活</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 03 Aug 2023 15:31:54 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Swift 學習筆記：基本型別、初學者資源</title>
+      <link>https://example.org/2023/08/03/swift-data-type-beginners-resources/</link>
+      <pubDate>Thu, 03 Aug 2023 15:31:54 +0000</pubDate>
+      <guid>https://example.org/2023/08/03/swift-data-type-beginners-resources/</guid>
+      <description>&lt;p&gt;開始決定學習程式語言 Swift 後，我先問 ChatGPT 如何學好這門程式語言，它的建議是：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

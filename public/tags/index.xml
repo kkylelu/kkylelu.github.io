@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 凱爾鹿數位生活</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on 凱爾鹿數位生活</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 16 Oct 2023 10:33:26 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>contributions</title>
+      <link>https://example.org/tags/contributions/</link>
+      <pubDate>Mon, 16 Oct 2023 10:33:26 +0000</pubDate>
+      <guid>https://example.org/tags/contributions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GitHub</title>
+      <link>https://example.org/tags/github/</link>
+      <pubDate>Mon, 16 Oct 2023 10:33:26 +0000</pubDate>
+      <guid>https://example.org/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>小綠點</title>
+      <link>https://example.org/tags/%E5%B0%8F%E7%B6%A0%E9%BB%9E/</link>
+      <pubDate>Mon, 16 Oct 2023 10:33:26 +0000</pubDate>
+      <guid>https://example.org/tags/%E5%B0%8F%E7%B6%A0%E9%BB%9E/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>貢獻值</title>
+      <link>https://example.org/tags/%E8%B2%A2%E7%8D%BB%E5%80%BC/</link>
+      <pubDate>Mon, 16 Oct 2023 10:33:26 +0000</pubDate>
+      <guid>https://example.org/tags/%E8%B2%A2%E7%8D%BB%E5%80%BC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>player</title>
+      <link>https://example.org/tags/player/</link>
+      <pubDate>Mon, 09 Oct 2023 04:52:22 +0000</pubDate>
+      <guid>https://example.org/tags/player/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pomodoro</title>
+      <link>https://example.org/tags/pomodoro/</link>
+      <pubDate>Mon, 09 Oct 2023 04:52:22 +0000</pubDate>
+      <guid>https://example.org/tags/pomodoro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>swift</title>
+      <link>https://example.org/tags/swift/</link>
+      <pubDate>Mon, 09 Oct 2023 04:52:22 +0000</pubDate>
+      <guid>https://example.org/tags/swift/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>timer</title>
+      <link>https://example.org/tags/timer/</link>
+      <pubDate>Mon, 09 Oct 2023 04:52:22 +0000</pubDate>
+      <guid>https://example.org/tags/timer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arc</title>
+      <link>https://example.org/tags/arc/</link>
+      <pubDate>Sat, 09 Sep 2023 05:11:29 +0000</pubDate>
+      <guid>https://example.org/tags/arc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>外掛</title>
+      <link>https://example.org/tags/%E5%A4%96%E6%8E%9B/</link>
+      <pubDate>Sat, 09 Sep 2023 05:11:29 +0000</pubDate>
+      <guid>https://example.org/tags/%E5%A4%96%E6%8E%9B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>瀏覽器</title>
+      <link>https://example.org/tags/%E7%80%8F%E8%A6%BD%E5%99%A8/</link>
+      <pubDate>Sat, 09 Sep 2023 05:11:29 +0000</pubDate>
+      <guid>https://example.org/tags/%E7%80%8F%E8%A6%BD%E5%99%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ios</title>
+      <link>https://example.org/tags/ios/</link>
+      <pubDate>Tue, 22 Aug 2023 08:34:51 +0000</pubDate>
+      <guid>https://example.org/tags/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>練習作品</title>
+      <link>https://example.org/tags/%E7%B7%B4%E7%BF%92%E4%BD%9C%E5%93%81/</link>
+      <pubDate>Tue, 22 Aug 2023 08:34:51 +0000</pubDate>
+      <guid>https://example.org/tags/%E7%B7%B4%E7%BF%92%E4%BD%9C%E5%93%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>學習資源</title>
+      <link>https://example.org/tags/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90/</link>
+      <pubDate>Thu, 03 Aug 2023 15:31:54 +0000</pubDate>
+      <guid>https://example.org/tags/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://example.org/tags/ai/</link>
+      <pubDate>Sat, 22 Jul 2023 17:27:33 +0000</pubDate>
+      <guid>https://example.org/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ChatGPT</title>
+      <link>https://example.org/tags/chatgpt/</link>
+      <pubDate>Sat, 22 Jul 2023 17:27:33 +0000</pubDate>
+      <guid>https://example.org/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>表格</title>
+      <link>https://example.org/tags/%E8%A1%A8%E6%A0%BC/</link>
+      <pubDate>Sat, 22 Jul 2023 17:27:33 +0000</pubDate>
+      <guid>https://example.org/tags/%E8%A1%A8%E6%A0%BC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>摘要重點</title>
+      <link>https://example.org/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/</link>
+      <pubDate>Sat, 22 Jul 2023 17:27:33 +0000</pubDate>
+      <guid>https://example.org/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DALLE</title>
+      <link>https://example.org/tags/dalle/</link>
+      <pubDate>Sat, 17 Jun 2023 14:10:44 +0000</pubDate>
+      <guid>https://example.org/tags/dalle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Photoshop</title>
+      <link>https://example.org/tags/photoshop/</link>
+      <pubDate>Sat, 17 Jun 2023 14:10:44 +0000</pubDate>
+      <guid>https://example.org/tags/photoshop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>可愛</title>
+      <link>https://example.org/tags/%E5%8F%AF%E6%84%9B/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/%E5%8F%AF%E6%84%9B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>動漫</title>
+      <link>https://example.org/tags/%E5%8B%95%E6%BC%AB/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/%E5%8B%95%E6%BC%AB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>線上遊戲</title>
+      <link>https://example.org/tags/%E7%B7%9A%E4%B8%8A%E9%81%8A%E6%88%B2/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/%E7%B7%9A%E4%B8%8A%E9%81%8A%E6%88%B2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>療癒</title>
+      <link>https://example.org/tags/%E7%99%82%E7%99%92/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/%E7%99%82%E7%99%92/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>戀愛</title>
+      <link>https://example.org/tags/%E6%88%80%E6%84%9B/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/%E6%88%80%E6%84%9B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>小說</title>
+      <link>https://example.org/tags/%E5%B0%8F%E8%AA%AA/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/%E5%B0%8F%E8%AA%AA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>科幻</title>
+      <link>https://example.org/tags/%E7%A7%91%E5%B9%BB/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.org/tags/%E7%A7%91%E5%B9%BB/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
