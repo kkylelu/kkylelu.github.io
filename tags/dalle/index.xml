@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DALLE on 凱爾鹿數位生活</title>
+    <link>kylelu.com/tags/dalle/</link>
+    <description>Recent content in DALLE on 凱爾鹿數位生活</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 17 Jun 2023 14:10:44 +0000</lastBuildDate>
+    <atom:link href="kylelu.com/tags/dalle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何用免費 AI 繪圖工具，做出遊戲風格、指定尺寸的背景圖片？</title>
+      <link>kylelu.com/2023-06-17-create-game-style-background-with-free-ai-image-generator/</link>
+      <pubDate>Sat, 17 Jun 2023 14:10:44 +0000</pubDate>
+      <guid>kylelu.com/2023-06-17-create-game-style-background-with-free-ai-image-generator/</guid>
+      <description>&lt;p&gt;我想要幫部落格做一張背景圖，類似遊戲「地平線：期待黎明」的人機共生科幻風格，最好有「薩爾達傳說：曠野之息」薄霧覆蓋的大片綠意，畫面呈現人類、科技與大自然和諧共存的概念。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
