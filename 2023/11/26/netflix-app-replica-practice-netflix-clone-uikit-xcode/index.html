@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode",
+  
+  "image": "https://kylelu.com/images/K-Lix%20Icon%20Design.avif",
+  
+  "datePublished": "2023-11-26T00:00:00Z",
+  "dateModified": "2023-11-26T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Kyle Lu｜凱爾鹿",
+    
+    "image": "https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/kylelu.com\/2023\/11\/26\/netflix-app-replica-practice-netflix-clone-uikit-xcode\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "凱爾鹿數位生活",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574"
+    }
+    
+  },
+  "description": "身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.120.4 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Kyle Lu｜凱爾鹿">
+<meta name="keywords" content="">
+<meta name="description" content="身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。">
+
+
+<meta property="og:description" content="身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode">
+<meta name="twitter:title" content="復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode">
+<meta property="og:url" content="https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/">
+<meta property="twitter:url" content="https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/">
+<meta property="og:site_name" content="凱爾鹿數位生活">
+<meta property="og:description" content="身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。">
+<meta name="twitter:description" content="身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。">
+<meta property="og:locale" content="zh-tw">
+
+  
+    <meta property="article:published_time" content="2023-11-26T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2023-11-26T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Swift 學習筆記">
+    
+  
+  
+    
+      <meta property="article:tag" content="Xcode">
+    
+      <meta property="article:tag" content="Netflix">
+    
+      <meta property="article:tag" content="Cloneapp">
+    
+      <meta property="article:tag" content="Interface Builder">
+    
+      <meta property="article:tag" content="Swift">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=640">
+
+
+
+
+
+  <meta property="og:image" content="https://kylelu.com/images/K-Lix%20Icon%20Design.avif">
+  <meta property="twitter:image" content="https://kylelu.com/images/K-Lix%20Icon%20Design.avif">
+
+
+    <title>復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode</title>
+
+    <link rel="icon" href="https://kylelu.com/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://kylelu.com/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://kylelu.com/" aria-label="去首頁">凱爾鹿數位生活</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://kylelu.com/#about" aria-label="打開鏈接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=90" alt="作者的圖片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://kylelu.com/#about" aria-label="閱讀有關作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=110" alt="作者的圖片" />
+        </a>
+        <h4 class="sidebar-profile-name">Kyle Lu｜凱爾鹿</h4>
+        
+          <h5 class="sidebar-profile-bio">培養思維、掌握工具，打造滿意生活</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首頁</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分類</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">標籤</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">所有文章</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">關於</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kkylelu" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:hi@kylelu.com" target="_blank" rel="noopener" title="Email">
+    
+      <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Email</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Atom</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-11-26T00:00:00Z">
+        
+  十一月 26, 2023
+
+      </time>
+    
+    
+  
+  
+    <span>分類</span>
+    
+      <a class="category-link" href="https://kylelu.com/categories/swift-%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">Swift 學習筆記</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。</p>
+<h1 id="table-of-contents">目錄</h1>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#學習目標">學習目標</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#開發階段">開發階段</a>
+          <ul>
+            <li><a href="#第一步挑選設計稿">第一步：挑選設計稿</a></li>
+            <li><a href="#第二步設計基礎框架">第二步：設計基礎框架</a></li>
+            <li><a href="#第三步美化設計細節">第三步：美化設計細節</a></li>
+            <li><a href="#第四步串接不同頁面">第四步：串接不同頁面</a></li>
+          </ul>
+        </li>
+        <li><a href="#開發小結">開發小結</a></li>
+        <li><a href="#storyboard-佈局大合照">Storyboard 佈局大合照</a></li>
+        <li><a href="#github-交作業">Github 交作業</a></li>
+        <li><a href="#參考文件">參考文件</a></li>
+        <li><a href="#版權聲明">版權聲明</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<p>上禮拜開始，我決定要給自己一個挑戰 — <strong>試著刻出一個 Netflix App…<strong>其中的 3 頁</strong>！</strong></p>
+<p>畢竟有多少機會能把自己喜歡的片單都排進全球熱門排行呢🔥？</p>
+<p>其實一開始只是想藉這個機會，好好熟悉 Xcode 的 Interface Builder，學習用表格建立一個電子書 app，所以先找了設計師前輩做的 UI。但後來想想，既然要做，乾脆就模仿此時此刻的 Netflix UI，雖然這樣更有挑戰性，但這樣日後回顧時會更有趣！</p>
+<h2 id="學習目標">學習目標</h2>
+<ol>
+<li>
+<p>搭配 tab bar controller &amp; navigation controller</p>
+</li>
+<li>
+<p>學習 table view controller with static cells</p>
+</li>
+<li>
+<p>學習 scroll view 用法</p>
+</li>
+<li>
+<p>使用 segue 串接頁面</p>
+</li>
+<li>
+<p>熟悉常用元件的屬性</p>
+</li>
+</ol>
+<h2 id="demo">Demo</h2>
+<p>經過這陣子跟 Interface Builder 搏感情，終於刻出 87 分滿意的畫面，真是恍如隔世啊～</p>
+<p><img src="KLix_11%E6%9C%8825%E6%97%A5.gif" alt="KLix_11月25日.gif"></p>
+<p><img src="KLix_1125.gif" alt="KLix_1125.gif"></p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/NDTCZwTo0IA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="開發階段">開發階段</h2>
+<h3 id="第一步挑選設計稿">第一步：挑選設計稿</h3>
+<p>知道這次電子書 app 是為了要學習表格式 app 的做法，思考了一陣子決定選擇 Netflix，於是到 <a href="https://www.figma.com/community">Figma community</a> 選擇喜歡的素材。</p>
+<p>在這裡我花了大概 1 個小時，實在太有趣了～沒想到有這麼多設計師會熱心分享自己復刻的 App UI 素材，包含 IG、Spotify、Threads…等。</p>
+<p><img src="2023-11-17%20at%2012.54.11.avif" alt="2023-11-17 at 12.54.11.avif"></p>
+<p><img src="2023-11-17%20at%2012.54.42.avif" alt="2023-11-17 at 12.54.42.avif"></p>
+<p>注意右下角有作者最後更新的日期，有些作者會標榜 1.0 和 2.0，但不同作者的更新時間不一樣，很可能會遇到 A 作者的 2.0 比 B 作者 1.0 還早發佈的情況，想要找最新素材的同學可以留意一下。</p>
+<h3 id="第二步設計基礎框架">第二步：設計基礎框架</h3>
+<p>參考 Netflix 原本的 App 架構，我使用：</p>
+<ul>
+<li>
+<p>Tab Bar Controller 做為基底</p>
+</li>
+<li>
+<p>Table View Controller 當容器</p>
+</li>
+<li>
+<p>Navigation Controller 進出不同頁面</p>
+</li>
+</ul>
+<p>搭配這些元素之後，APP 的雛形就出爐囉！</p>
+<p><strong>拆解首頁、分集介紹頁架構</strong></p>
+<p>通常是 Tab Bar Controller 在第一個，後面可以跟許多 Navigation Controller</p>
+<p><img src="2023-11-25%20at%2000.41.19.avif" alt="2023-11-25 at 00.41.19.avif"></p>
+<p><img src="2023-11-25%20at%2000.45.22.avif" alt="2023-11-25 at 00.45.22.avif"></p>
+<p>Tab Bar Controller 在第一個，後面可以跟許多 Navigation Controller</p>
+<p><img src="2023-11-25%20at%2000.48.07.avif" alt="2023-11-25 at 00.48.07.avif"></p>
+<p>用 table view controller 當首頁、分集介紹頁的容器，容器架構都是這樣：</p>
+<ol>
+<li>
+<p>上方：以 container view 作為任意門，呼叫 view controller</p>
+</li>
+<li>
+<p>下方：以 table view（紅框處）, scroll view（黃框處） 做出片單</p>
+<p><img src="2023-11-25%20at%2000.37.45.avif" alt="2023-11-25 at 00.37.45.avif"></p>
+</li>
+</ol>
+<h3 id="第三步美化設計細節">第三步：美化設計細節</h3>
+<p>打造了骨骼精奇的架構，再來就是進行醫美手術拉皮的部分，這部分就要出動 Interface Builder，我針對：</p>
+<ul>
+<li>
+<p>字型、大小</p>
+</li>
+<li>
+<p>圖片、顏色</p>
+</li>
+<li>
+<p>按鈕、標籤</p>
+</li>
+</ul>
+<p>等等元素調整格式，讓畫面看起來更接近原生 Netflix。</p>
+<p>這時候已經 87 分像了！
+邊滑 APP 邊思考要塞哪些片單進去，我就這樣霸氣的掌控 Netflix 的 AI（有夢最美），決定哪些片單要讓它紅！</p>
+<p><img src="2023-11-25%20at%2000.53.29.avif" alt="2023-11-25 at 00.53.29.avif">
+<em>利用 Interface Builder 的 Attributes Inspector 調整屬性，包含字體圖片的顏色格式等</em></p>
+<p><img src="2023-11-25%20at%2000.54.34.avif" alt="2023-11-25 at 00.54.34.avif">
+<em>利用 Interface Builder 的 Size Inspector 調整尺寸、位置等</em></p>
+<h3 id="第四步串接不同頁面">第四步：串接不同頁面</h3>
+<p>最後一道工法就是用 Segue 把各頁面的按鈕和畫面串連起來。</p>
+<p><img src="2023-11-25%20at%2000.55.34.avif" alt="2023-11-25 at 00.55.34.avif">
+<em>這藍線一個沒連好就是剪不斷理還亂</em></p>
+<p>修修改改好幾次之後&hellip;</p>
+<p>我的復刻 Netflix — KLix APP 終於大功告成🎉</p>
+<p><img src="K-Lix%20Icon%20Design.avif" alt="K-Lix Icon Design.avif"></p>
+<p>還興奮的請 AI 幫我畫個 APP 的 icon 以茲紀念！</p>
+<h2 id="開發小結">開發小結</h2>
+<p>雖然只是初步刻 APP 的 UI 畫面，還沒到真正 coding 的階段，不過在各種畫面和屬性之間打轉，從原本的粗心漏看欄位，到可以強勢置入喜歡的片單，點擊後還可以對應產生頁面，還是很開心、很有成就感！</p>
+<p><strong>第一版和目前畫面對比</strong></p>
+<p>這是我的第一版畫面，其實我原本單純想照著 Figma 的範例做，因為設計師都已經把料備好了，我就不用煩惱內容，專心疊積木就好。</p>
+<p><img src="Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20-%202023-11-20%20at%2023.46.13.gif" alt="Simulator Screen Recording - iPhone 15 Pro - 2023-11-20 at 23.46.13.gif"></p>
+<p><img src="KLix_11%E6%9C%8825%E6%97%A5.gif" alt="KLix_11月25日.gif">
+<em>第一版與目前版本對比</em></p>
+<p>對比我的第一版畫面，其實我原本單純想照著 Figma 的範例做，因為設計師都已經把料備好了，我就不用煩惱內容，專心疊積木就好。</p>
+<p>只是看到同學們陸續都上傳作業了，讓我開始思考人生想到其實既然要做，跟著目前最新的 UI 做，雖然比較有挑戰性，但更有趣、更有現代感！就決定調整首頁主視覺。</p>
+<p>如果再做一次，我會特別留意素材、元件和 view 這幾點（那不就是全部了嗎？）：</p>
+<p><strong>素材相關</strong></p>
+<ol>
+<li>
+<p>可以先用現成的，等架構都沒問題再來一口氣更新，比較省時間。</p>
+</li>
+<li>
+<p>圖片先批次處理成同樣的尺寸和解析度，可以省下後續許多瑣碎調整的工夫。</p>
+</li>
+</ol>
+<p><strong>元件屬性相關</strong></p>
+<ol>
+<li>
+<p>想調整 Tab bar 和 Navigation bar 的顏色，要找關鍵字叫做「Style」的，而不是 color ，否則會找到一把火牙起來。</p>
+</li>
+<li>
+<p>button 的 image 跟斯斯一樣有兩種，一種是 symbol 會跟文字排列，放入的圖片多大就是多大；一種是取代文字，整張 button 就是一張圖，這種就可以透過 custom 調整大小。</p>
+</li>
+<li>
+<p>1 個 button 如果塞不下/不能自由調整 symbol 或字型，可以拆成 2 個 button。</p>
+</li>
+</ol>
+<p><strong>view 相關</strong></p>
+<ol>
+<li>
+<p>table view 的 section header 內建不能變顏色和大小，可以另外新增 Table View Cell 來裝 Label 。</p>
+</li>
+<li>
+<p>scroll view 的做法很特殊，要記得新增超長的 view 在裡面，以及留意 contentSize 的長度。</p>
+</li>
+</ol>
+<h2 id="storyboard-佈局大合照">Storyboard 佈局大合照</h2>
+<p>時間的關係，主要集中火力在練習 table view 相關的元件，目前播放影片都是用圖片暫代，期待開始 coding 後，可以換成真正會動的影片！（不過礙於版權還是不能放真正片源啦～）</p>
+<p><img src="2023-11-25%20at%2014.21.05.avif" alt="2023-11-25 at 14.21.05.avif"></p>
+<h2 id="github-交作業">Github 交作業</h2>
+<p><a href="https://github.com/kkylelu/netflix_onepage">https://github.com/kkylelu/netflix_onepage</a></p>
+<h2 id="參考文件">參考文件</h2>
+<ul>
+<li>
+<p><a href="https://www.figma.com/community/file/1133841519580847725">Netflix UI Kit (Mobile iOS) – Figma</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E2%91%A8%E2%91%A4-uibutton-%E7%9A%84-n-%E7%A8%AE%E7%8E%A9%E6%B3%95-28db3d113bc6">⑨⑤ UIButton 的 N 種玩法. (iOS 15 up) 以 storyboard 與 UIKit 設定… | by Min | 彼得潘的 Swift iOS App 開發教室 | Nov, 2023 | Medium</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/%E5%88%A9%E7%94%A8-ios-15-%E7%9A%84-uibutton-configuration-%E5%AF%A6%E7%8F%BE%E5%9C%96%E7%89%87%E7%B6%AD%E6%8C%81%E6%AF%94%E4%BE%8B%E7%9A%84-button-324cfc95001c">利用 iOS 15 的 UIButton.Configuration 實現圖片維持比例的 button，圓形 button &amp; 點選時變色 | by 彼得潘的 iOS App Neverland | 彼得潘的 Swift iOS App 開發問題解答集 | Medium</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/%E8%AE%93-view-%E8%AE%8A%E5%9C%93%E8%A7%92%E7%9A%84-layer-cornerradius-54aa7afda2a1">讓 view 變圓角的 layer.cornerRadius. 透過設定 view 的… | by 彼得潘的 iOS App Neverland | 彼得潘的 Swift iOS App 開發問題解答集 | Medium</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/ios-15-%E7%9A%84-static-cells-%E7%9A%84-section-header-footer-%E9%A1%AF%E7%A4%BA%E5%95%8F%E9%A1%8C-a19031321955">https://medium.com/彼得潘的-swift-ios-app-開發問題解答集/ios-15-的-static-cells-的-section-header-footer-顯示問題-a19031321955</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84%E8%A9%A6%E7%85%89-%E5%8B%87%E8%80%85%E7%9A%84-100-%E9%81%93-swift-ios-app-%E8%AC%8E%E9%A1%8C/129-%E5%BE%9E-figma-community-%E7%B7%B4%E7%BF%92%E5%AF%A6%E4%BD%9C-app-%E7%95%AB%E9%9D%A2-cb7a1d774c56">#129 從 Figma Community 練習實作 App 畫面 | by 彼得潘的 iOS App Neverland | 彼得潘的 100 道 Swift iOS App 謎題 | Medium</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E5%95%8F%E9%A1%8C%E8%A7%A3%E7%AD%94%E9%9B%86/%E5%9C%A8-storyboard-%E8%A8%AD%E5%AE%9A-content-size-%E5%AF%A6%E7%8F%BE%E6%B0%B4%E5%B9%B3%E6%8D%B2%E5%8B%95%E7%9A%84-scroll-view-2710fa247293">設定 content size，實現水平捲動，上下捲動和分頁的 scroll view | by 彼得潘的 iOS App Neverland | 彼得潘的 Swift iOS App 開發問題解答集 | Medium</a></p>
+</li>
+</ul>
+<h2 id="版權聲明">版權聲明</h2>
+<p>本作品中所使用的所有圖片及素材，皆來自網絡公開分享資源。如果有任何圖片或素材不小心用了你的作品，請聯絡我以便適當處理。本作品<strong>沒有</strong>這些圖片或素材的版權，也<strong>不會</strong>用來盈利。</p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">標籤</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/xcode/">Xcode</a>
+
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/netflix/">Netflix</a>
+
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/cloneapp/">Cloneapp</a>
+
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/interface-builder/">Interface Builder</a>
+
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/swift/">Swift</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023/11/17/understanding-ui-components-xcode/" data-tooltip="認識 UI 元件｜Xcode" aria-label="上一篇: 認識 UI 元件｜Xcode">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/kylelu.com\/2023\/11\/26\/netflix-app-replica-practice-netflix-clone-uikit-xcode\/';
+        
+          this.page.identifier = '\/2023\/11\/26\/netflix-app-replica-practice-netflix-clone-uikit-xcode\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 Kyle Lu｜凱爾鹿. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023/11/17/understanding-ui-components-xcode/" data-tooltip="認識 UI 元件｜Xcode" aria-label="上一篇: 認識 UI 元件｜Xcode">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkylelu.com%2F2023%2F11%2F26%2Fnetflix-app-replica-practice-netflix-clone-uikit-xcode%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkylelu.com%2F2023%2F11%2F26%2Fnetflix-app-replica-practice-netflix-clone-uikit-xcode%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fkylelu.com%2F2023%2F11%2F26%2Fnetflix-app-replica-practice-netflix-clone-uikit-xcode%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=110" alt="作者的圖片" />
+    
+    <h4 id="about-card-name">Kyle Lu｜凱爾鹿</h4>
+    
+      <div id="about-card-bio">培養思維、掌握工具，打造滿意生活</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Problem solver
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Taipei
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://kylelu.com/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://kylelu.com/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

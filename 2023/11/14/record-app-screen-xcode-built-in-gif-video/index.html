@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "錄製 App 操作畫面 - xcode 內建錄製 Gif 影片",
+  
+  "image": "https://kylelu.com/images/K.Lu-231114.avif",
+  
+  "datePublished": "2023-11-14T00:00:00Z",
+  "dateModified": "2023-11-14T00:00:00Z",
+  "author": {
+    "@type": "Person",
+    "name": "Kyle Lu｜凱爾鹿",
+    
+    "image": "https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/kylelu.com\/2023\/11\/14\/record-app-screen-xcode-built-in-gif-video\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "凱爾鹿數位生活",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574"
+    }
+    
+  },
+  "description": "每天有那麼多 app 誕生，我們很少有閒情逸致可以下載 app 後把玩幾天再決定要不要用。\n",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.120.4 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="Kyle Lu｜凱爾鹿">
+<meta name="keywords" content="">
+<meta name="description" content="每天有那麼多 app 誕生，我們很少有閒情逸致可以下載 app 後把玩幾天再決定要不要用。">
+
+
+<meta property="og:description" content="每天有那麼多 app 誕生，我們很少有閒情逸致可以下載 app 後把玩幾天再決定要不要用。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="錄製 App 操作畫面 - xcode 內建錄製 Gif 影片">
+<meta name="twitter:title" content="錄製 App 操作畫面 - xcode 內建錄製 Gif 影片">
+<meta property="og:url" content="https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/">
+<meta property="twitter:url" content="https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/">
+<meta property="og:site_name" content="凱爾鹿數位生活">
+<meta property="og:description" content="每天有那麼多 app 誕生，我們很少有閒情逸致可以下載 app 後把玩幾天再決定要不要用。">
+<meta name="twitter:description" content="每天有那麼多 app 誕生，我們很少有閒情逸致可以下載 app 後把玩幾天再決定要不要用。">
+<meta property="og:locale" content="zh-tw">
+
+  
+    <meta property="article:published_time" content="2023-11-14T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2023-11-14T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Swift 學習筆記">
+    
+  
+  
+    
+      <meta property="article:tag" content="Xcode">
+    
+      <meta property="article:tag" content="Gif">
+    
+      <meta property="article:tag" content="螢幕錄影">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=640">
+
+
+
+
+
+  <meta property="og:image" content="https://kylelu.com/images/K.Lu-231114.avif">
+  <meta property="twitter:image" content="https://kylelu.com/images/K.Lu-231114.avif">
+
+
+    <title>錄製 App 操作畫面 - xcode 內建錄製 Gif 影片</title>
+
+    <link rel="icon" href="https://kylelu.com/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://kylelu.com/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://kylelu.com/" aria-label="去首頁">凱爾鹿數位生活</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://kylelu.com/#about" aria-label="打開鏈接: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=90" alt="作者的圖片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://kylelu.com/#about" aria-label="閱讀有關作者的更多信息">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=110" alt="作者的圖片" />
+        </a>
+        <h4 class="sidebar-profile-name">Kyle Lu｜凱爾鹿</h4>
+        
+          <h5 class="sidebar-profile-bio">培養思維、掌握工具，打造滿意生活</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">首頁</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">分類</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">標籤</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">所有文章</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">關於</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kkylelu" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:hi@kylelu.com" target="_blank" rel="noopener" title="Email">
+    
+      <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Email</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://kylelu.com/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Atom</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      錄製 App 操作畫面 - xcode 內建錄製 Gif 影片
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-11-14T00:00:00Z">
+        
+  十一月 14, 2023
+
+      </time>
+    
+    
+  
+  
+    <span>分類</span>
+    
+      <a class="category-link" href="https://kylelu.com/categories/swift-%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">Swift 學習筆記</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>每天有那麼多 app 誕生，我們很少有閒情逸致可以下載 app 後把玩幾天再決定要不要用。</p>
+<h1 id="table-of-contents">目錄</h1>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#用圖片或影片預覽-app">用圖片或影片預覽 app</a></li>
+        <li><a href="#gif-比影片更體貼">Gif 比影片更體貼</a></li>
+        <li><a href="#幫還沒上架的-ios-app-錄製-gif">幫還沒上架的 iOS app 錄製 Gif</a></li>
+        <li><a href="#參考文件">參考文件</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<p>除非你有開盲盒的興趣，或是把 app 當轉蛋在開箱。</p>
+<p>更多時候我們會在下載 app 前做一件事 — 看 app 預覽畫面。</p>
+<h2 id="用圖片或影片預覽-app">用圖片或影片預覽 app</h2>
+<p>基本款是看圖片，會有 app 的操作介面、主打功能等等</p>
+<p><img src="KL_2023-11-14%20at%2011.25.11.avif" alt="KL_2023-11-14 at 11.25.11.avif">
+<em>app store 的 app 預覽圖片畫面</em></p>
+<p>用心一點的 app 像 <a href="https://apps.apple.com/us/app/kono-magazine/id477224666">Kono 電子雜誌</a> 還會提供影片，在短短 30 秒內精銳盡出，省得下載後才發現我們不適合。（這裡有官方提供的 <a href="https://developer.apple.com/tw/help/app-store-connect/reference/app-preview-specifications">App 預覽規格</a>）</p>
+<p><img src="2023-11-14%20at%2011.38.58.gif" alt="2023-11-14 at 11.38.58.gif">
+<em>app 提供影片預覽</em></p>
+<p>雖然說下載只是不到 30 秒鐘的事情</p>
+<p>但如果花個 3 秒鐘，就能少浪費 3 倍以上的時間</p>
+<p>拿來追更多劇不是更好嗎？</p>
+<p>什麼？可以邊下載 app 邊追劇？</p>
+<p>那我們今天這堂課就上到這邊。</p>
+<h2 id="gif-比影片更體貼">Gif 比影片更體貼</h2>
+<p>同樣的，在看一篇 app 介紹文章時，如果懶得跳出去找 app store 的介紹，這時候更體貼讀者的做法就是「提供 GIF 預覽圖」</p>
+<p>這樣讀者不會因為跑去 app store 一去不復返忘了回來，也不用伸長已經快抽筋的大拇指點擊影片播放鍵，就能好好欣賞 app 大作</p>
+<p>還沒使用到 app ，好感度先加 50 分！</p>
+<h2 id="幫還沒上架的-ios-app-錄製-gif">幫還沒上架的 iOS app 錄製 Gif</h2>
+<p>原本我都是用截圖軟體 <a href="https://cleanshot.com/">CleanShot</a> 幫還沒上架的 iOS app 錄影</p>
+<p>不過新學到一招更直覺的方法—直接用 xcode 內建錄影功能！</p>
+<p><img src="play_2023-11-14%20at%2012.05.58.avif" alt="play_2023-11-14 at 12.05.58.avif">
+<em>點擊左上角播放鍵，啟動模擬器</em></p>
+<p><img src="record_2023-11-14%20at%2012.02.40.avif" alt="record_2023-11-14 at 12.02.40.avif">
+<em>可以選擇 <em>File</em> &gt; <em>Record Screen</em></em></p>
+<p>推薦直接用快速鍵：Command + R 鍵來開始錄製比較快</p>
+<p>錄完後，右下角會出現一個小跟班</p>
+<p><img src="savegif_2023-11-14%20at%2012.04.29.avif" alt="savegif_2023-11-14 at 12.04.29.avif">
+<em>在小預覽畫面按右鍵選擇 Save as Animated GIF</em></p>
+<p>記得在這個小預覽畫面按右鍵，選擇 Save as Animated GIF</p>
+<p>這樣就會自動存在桌面囉！</p>
+<p><img src="Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20-%202023-11-14%20at%2012.09.13.gif" alt="Simulator Screen Recording - iPhone 15 Pro - 2023-11-14 at 12.09.13.gif">
+<em>xcode 內建 app 錄影功能</em></p>
+<p>比起 CleanShot 錄製畫面， xcode 內建錄影<strong>沒有</strong>手機的 mockup ，可能少了一點 fu ，但錄製起來方便很多！尤其是搭配快速鍵，發現自己動作不流暢就二話不說重來，非常直覺。</p>
+<p>要選擇另外用截圖軟體，或用 xcode 內建功能錄製 Gif，就看個人取捨囉。</p>
+<h2 id="參考文件">參考文件</h2>
+<p><a href="https://medium.com/%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84-swift-ios-app-%E9%96%8B%E7%99%BC%E6%95%99%E5%AE%A4/%E7%86%9F%E6%82%89-app-%E5%BD%B1%E7%89%87%E9%8C%84%E8%A3%BD-github-medium-%E5%BD%BC%E5%BE%97%E6%BD%98%E7%9A%84ios-app-%E4%BD%9C%E6%A5%AD-646d009f43fc">熟悉 App gif 錄製，GitHub，Medium - 彼得潘的 Swift iOS App 開發教室 - Medium</a></p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">標籤</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/xcode/">Xcode</a>
+
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/gif/">Gif</a>
+
+  <a class="tag tag--primary tag--small" href="https://kylelu.com/tags/%E8%9E%A2%E5%B9%95%E9%8C%84%E5%BD%B1/">螢幕錄影</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023/11/14/typing-speed-test-monkeytype/" data-tooltip="英打盲打速度測驗 - monkeytype" aria-label="下一篇: 英打盲打速度測驗 - monkeytype">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023/10/16/why-github-contributions-green-dot-not-showing/" data-tooltip="為什麼我的 GitHub 小綠點（貢獻值 contributions）沒出現？" aria-label="上一篇: 為什麼我的 GitHub 小綠點（貢獻值 contributions）沒出現？">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/kylelu.com\/2023\/11\/14\/record-app-screen-xcode-built-in-gif-video\/';
+        
+          this.page.identifier = '\/2023\/11\/14\/record-app-screen-xcode-built-in-gif-video\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hugo-tranquilpeak-theme';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 Kyle Lu｜凱爾鹿. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023/11/14/typing-speed-test-monkeytype/" data-tooltip="英打盲打速度測驗 - monkeytype" aria-label="下一篇: 英打盲打速度測驗 - monkeytype">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023/10/16/why-github-contributions-green-dot-not-showing/" data-tooltip="為什麼我的 GitHub 小綠點（貢獻值 contributions）沒出現？" aria-label="上一篇: 為什麼我的 GitHub 小綠點（貢獻值 contributions）沒出現？">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="分享這個帖子">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/" title="分享到 Facebook" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/" title="分享到 Twitter" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/" title="分享到 Linkedin" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="發表評論">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="回到頂部">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkylelu.com%2F2023%2F11%2F14%2Frecord-app-screen-xcode-built-in-gif-video%2F" aria-label="分享到 Facebook">
+          <i class="fab fa-facebook-square" aria-hidden="true"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fkylelu.com%2F2023%2F11%2F14%2Frecord-app-screen-xcode-built-in-gif-video%2F" aria-label="分享到 Twitter">
+          <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fkylelu.com%2F2023%2F11%2F14%2Frecord-app-screen-xcode-built-in-gif-video%2F" aria-label="分享到 Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>分享到 Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/7d7a3497be1594b5f165a0488303b574?s=110" alt="作者的圖片" />
+    
+    <h4 id="about-card-name">Kyle Lu｜凱爾鹿</h4>
+    
+      <div id="about-card-bio">培養思維、掌握工具，打造滿意生活</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Problem solver
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Taipei
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://kylelu.com/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://kylelu.com/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

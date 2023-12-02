@@ -6,8 +6,37 @@
     <description>Recent content on 凱爾鹿數位生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 16 Oct 2023 10:33:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kylelu.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode</title>
+      <link>https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/</link>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/</guid>
+      <description>&lt;p&gt;身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>認識 UI 元件｜Xcode</title>
+      <link>https://kylelu.com/2023/11/17/understanding-ui-components-xcode/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023/11/17/understanding-ui-components-xcode/</guid>
+      <description>&lt;p&gt;這次來認識一下 Xcode 裡頭的 UI 元件，畢竟初來乍到，總是要跟前輩們拜個碼頭，讓之後的 swift coding 之路更加順利（是時候跟同學們一起團購綠色乖乖了？）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>英打盲打速度測驗 - monkeytype</title>
+      <link>https://kylelu.com/2023/11/14/typing-speed-test-monkeytype/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023/11/14/typing-speed-test-monkeytype/</guid>
+      <description>&lt;p&gt;記得高中時有測驗過自己的英打速度，大概是 30字/分，那時候還特地去考 TQC 證照。&lt;/p&gt;
+&lt;p&gt;後來才發現出社會後沒人在看那張，考了個寂寞。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>錄製 App 操作畫面 - xcode 內建錄製 Gif 影片</title>
+      <link>https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/</link>
+      <pubDate>Tue, 14 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/</guid>
+      <description>&lt;p&gt;每天有那麼多 app 誕生，我們很少有閒情逸致可以下載 app 後把玩幾天再決定要不要用。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>為什麼我的 GitHub 小綠點（貢獻值 contributions）沒出現？</title>
       <link>https://kylelu.com/2023/10/16/why-github-contributions-green-dot-not-showing/</link>
