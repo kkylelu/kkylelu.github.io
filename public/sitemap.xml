@@ -2,147 +2,192 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>kylelu.com/categories/</loc>
+    <loc>https://kylelu.com/categories/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/cloneapp/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/interface-builder/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/netflix/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/posts/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/swift/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/categories/swift-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/xcode/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/</loc>
+    <lastmod>2023-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/ui-component/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/2023/11/17/understanding-ui-components-xcode/</loc>
+    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/gif/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/categories/%E7%94%9F%E7%94%A2%E5%8A%9B/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/%E7%9B%B2%E6%89%93/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/%E8%8B%B1%E6%96%87%E6%89%93%E5%AD%97/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/2023/11/14/typing-speed-test-monkeytype/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/%E6%B8%AC%E9%A9%97/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/%E8%9E%A2%E5%B9%95%E9%8C%84%E5%BD%B1/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/2023/11/14/record-app-screen-xcode-built-in-gif-video/</loc>
+    <lastmod>2023-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kylelu.com/tags/contributions/</loc>
     <lastmod>2023-10-16T10:33:26+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/contributions/</loc>
+    <loc>https://kylelu.com/tags/github/</loc>
     <lastmod>2023-10-16T10:33:26+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/github/</loc>
+    <loc>https://kylelu.com/tags/%E5%B0%8F%E7%B6%A0%E9%BB%9E/</loc>
     <lastmod>2023-10-16T10:33:26+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/posts/</loc>
+    <loc>https://kylelu.com/2023/10/16/why-github-contributions-green-dot-not-showing/</loc>
     <lastmod>2023-10-16T10:33:26+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/categories/swift-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/</loc>
+    <loc>https://kylelu.com/categories/%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2023-10-16T10:33:26+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/</loc>
+    <loc>https://kylelu.com/tags/%E8%B2%A2%E7%8D%BB%E5%80%BC/</loc>
     <lastmod>2023-10-16T10:33:26+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E5%B0%8F%E7%B6%A0%E9%BB%9E/</loc>
-    <lastmod>2023-10-16T10:33:26+00:00</lastmod>
-  </url><url>
-    <loc>kylelu.com/2023/10/16/why-github-contributions-green-dot-not-showing/</loc>
-    <lastmod>2023-10-16T10:33:26+00:00</lastmod>
-  </url><url>
-    <loc>kylelu.com/categories/%E7%A7%91%E6%8A%80/</loc>
-    <lastmod>2023-10-16T10:33:26+00:00</lastmod>
-  </url><url>
-    <loc>kylelu.com/tags/%E8%B2%A2%E7%8D%BB%E5%80%BC/</loc>
-    <lastmod>2023-10-16T10:33:26+00:00</lastmod>
-  </url><url>
-    <loc>kylelu.com/</loc>
-    <lastmod>2023-10-16T10:33:26+00:00</lastmod>
-  </url><url>
-    <loc>kylelu.com/tags/player/</loc>
+    <loc>https://kylelu.com/tags/player/</loc>
     <lastmod>2023-10-09T04:52:22+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/pomodoro/</loc>
+    <loc>https://kylelu.com/tags/pomodoro/</loc>
     <lastmod>2023-10-09T04:52:22+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/swift/</loc>
+    <loc>https://kylelu.com/tags/timer/</loc>
     <lastmod>2023-10-09T04:52:22+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/timer/</loc>
+    <loc>https://kylelu.com/2023/10/09/pomodoro-timer-focus-on-wild/</loc>
     <lastmod>2023-10-09T04:52:22+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023/10/09/pomodoro-timer-focus-on-wild/</loc>
-    <lastmod>2023-10-09T04:52:22+00:00</lastmod>
-  </url><url>
-    <loc>kylelu.com/tags/arc/</loc>
+    <loc>https://kylelu.com/tags/arc/</loc>
     <lastmod>2023-09-09T05:11:29+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E5%A4%96%E6%8E%9B/</loc>
+    <loc>https://kylelu.com/tags/%E5%A4%96%E6%8E%9B/</loc>
     <lastmod>2023-09-09T05:11:29+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023/09/09/how-to-copy-title-and-url-in-arc-browser-using-markdown/</loc>
+    <loc>https://kylelu.com/2023/09/09/how-to-copy-title-and-url-in-arc-browser-using-markdown/</loc>
     <lastmod>2023-09-09T05:11:29+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/categories/%E6%95%B8%E4%BD%8D%E5%B7%A5%E5%85%B7%E6%87%89%E7%94%A8/</loc>
+    <loc>https://kylelu.com/categories/%E6%95%B8%E4%BD%8D%E5%B7%A5%E5%85%B7%E6%87%89%E7%94%A8/</loc>
     <lastmod>2023-09-09T05:11:29+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E7%80%8F%E8%A6%BD%E5%99%A8/</loc>
+    <loc>https://kylelu.com/tags/%E7%80%8F%E8%A6%BD%E5%99%A8/</loc>
     <lastmod>2023-09-09T05:11:29+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/ios/</loc>
+    <loc>https://kylelu.com/tags/ios/</loc>
     <lastmod>2023-08-22T08:34:51+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023/08/22/whatsforlunch-arrayint-random/</loc>
+    <loc>https://kylelu.com/2023/08/22/whatsforlunch-arrayint-random/</loc>
     <lastmod>2023-08-22T08:34:51+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E7%B7%B4%E7%BF%92%E4%BD%9C%E5%93%81/</loc>
+    <loc>https://kylelu.com/tags/%E7%B7%B4%E7%BF%92%E4%BD%9C%E5%93%81/</loc>
     <lastmod>2023-08-22T08:34:51+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023/08/21/googlemaps-for-ios/</loc>
+    <loc>https://kylelu.com/2023/08/21/googlemaps-for-ios/</loc>
     <lastmod>2023-08-21T16:22:40+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023/08/03/swift-data-type-beginners-resources/</loc>
+    <loc>https://kylelu.com/2023/08/03/swift-data-type-beginners-resources/</loc>
     <lastmod>2023-08-03T15:31:54+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90/</loc>
+    <loc>https://kylelu.com/tags/%E5%AD%B8%E7%BF%92%E8%B3%87%E6%BA%90/</loc>
     <lastmod>2023-08-03T15:31:54+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/ai/</loc>
+    <loc>https://kylelu.com/tags/ai/</loc>
     <lastmod>2023-07-22T17:27:33+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/chatgpt/</loc>
+    <loc>https://kylelu.com/tags/chatgpt/</loc>
     <lastmod>2023-07-22T17:27:33+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023-07-23-ask-chatgpt-to-sort-out-the-table/</loc>
+    <loc>https://kylelu.com/2023-07-23-ask-chatgpt-to-sort-out-the-table/</loc>
     <lastmod>2023-07-22T17:27:33+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/categories/%E5%B7%A5%E4%BD%9C%E8%A1%93/</loc>
+    <loc>https://kylelu.com/categories/%E5%B7%A5%E4%BD%9C%E8%A1%93/</loc>
     <lastmod>2023-07-22T17:27:33+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E8%A1%A8%E6%A0%BC/</loc>
+    <loc>https://kylelu.com/tags/%E8%A1%A8%E6%A0%BC/</loc>
     <lastmod>2023-07-22T17:27:33+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/</loc>
+    <loc>https://kylelu.com/tags/%E6%91%98%E8%A6%81%E9%87%8D%E9%BB%9E/</loc>
     <lastmod>2023-07-22T17:27:33+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/dalle/</loc>
+    <loc>https://kylelu.com/tags/dalle/</loc>
     <lastmod>2023-06-17T14:10:44+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/photoshop/</loc>
+    <loc>https://kylelu.com/tags/photoshop/</loc>
     <lastmod>2023-06-17T14:10:44+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023-06-17-create-game-style-background-with-free-ai-image-generator/</loc>
+    <loc>https://kylelu.com/2023-06-17-create-game-style-background-with-free-ai-image-generator/</loc>
     <lastmod>2023-06-17T14:10:44+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2023-06-26-loving_yamada_at_lv999/</loc>
+    <loc>https://kylelu.com/2023-06-26-loving_yamada_at_lv999/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E5%8F%AF%E6%84%9B/</loc>
+    <loc>https://kylelu.com/tags/%E5%8F%AF%E6%84%9B/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E5%8B%95%E6%BC%AB/</loc>
+    <loc>https://kylelu.com/tags/%E5%8B%95%E6%BC%AB/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/categories/%E5%8B%95%E6%BC%AB/</loc>
+    <loc>https://kylelu.com/categories/%E5%8B%95%E6%BC%AB/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E7%B7%9A%E4%B8%8A%E9%81%8A%E6%88%B2/</loc>
+    <loc>https://kylelu.com/tags/%E7%B7%9A%E4%B8%8A%E9%81%8A%E6%88%B2/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E7%99%82%E7%99%92/</loc>
+    <loc>https://kylelu.com/tags/%E7%99%82%E7%99%92/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E6%88%80%E6%84%9B/</loc>
+    <loc>https://kylelu.com/tags/%E6%88%80%E6%84%9B/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E5%B0%8F%E8%AA%AA/</loc>
+    <loc>https://kylelu.com/tags/%E5%B0%8F%E8%AA%AA/</loc>
     <lastmod>2022-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/2022-06-04-breathing-jiang-fengnans-second-novel-collection/</loc>
+    <loc>https://kylelu.com/2022-06-04-breathing-jiang-fengnans-second-novel-collection/</loc>
     <lastmod>2022-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/tags/%E7%A7%91%E5%B9%BB/</loc>
+    <loc>https://kylelu.com/tags/%E7%A7%91%E5%B9%BB/</loc>
     <lastmod>2022-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/categories/%E9%96%B1%E8%AE%80/</loc>
+    <loc>https://kylelu.com/categories/%E9%96%B1%E8%AE%80/</loc>
     <lastmod>2022-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>kylelu.com/archives/</loc>
+    <loc>https://kylelu.com/archives/</loc>
   </url>
 </urlset>
