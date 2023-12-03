@@ -18,7 +18,7 @@ defaultContentLanguage = "zh-tw"
 title = "凱爾鹿數位生活"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
-# googleAnalytics = "UA-123-45"
+# googleAnalytics = "G-GQP7Q11D2F"
 paginate = 7
 canonifyurls = true
 
@@ -87,7 +87,7 @@ canonifyurls = true
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fas fa-lg fa-question\" aria-hidden=\"true\"></i>"
-  url = "/#about"
+  url = "https://kylelu.com/about_me"
 
 [[menu.main]]
   weight = 6
@@ -184,7 +184,7 @@ canonifyurls = true
   # Current image is on AWS S3 and delivered by AWS CloudFront.
   # Otherwise put your image, for example `cover.jpg` in folder `static/images/`,
   # and use relative url : `images/cover.jpg`
-  coverImage = "images/cover.jpg"
+  coverImage = "images/cover.jpeg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
   imageGallery = true
@@ -291,15 +291,17 @@ canonifyurls = true
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
   # Tranquilpeak configuration > Theme configuration > sharing-options
+ 
+   [[params.sharingOptions]]
+    name = "Line"
+    icon = "fab fa-line"
+    url = "https://social-plugins.line.me/lineit/share?url=%s"
+
+ 
   [[params.sharingOptions]]
     name = "Facebook"
     icon = "fab fa-facebook-square"
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
-
-  [[params.sharingOptions]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    url = "https://twitter.com/intent/tweet?text=%s"
 
 
 #  [[params.sharingOptions]]
@@ -307,25 +309,17 @@ canonifyurls = true
 #    icon = "fab fa-whatsapp"
 #    url = "https://wa.me/?text=%s"
 
+
   [[params.sharingOptions]]
     name = "Linkedin"
     icon = "fab fa-linkedin"
     url = "https://www.linkedin.com/sharing/share-offsite/?url=%s"
 
-#  [[params.sharingOptions]]
-#    name = "Reddit"
-#    icon = "fab fa-reddit"
-#    url = "https://www.reddit.com/submit?url=%s"
-#
-#  [[params.sharingOptions]]
-#    name = "Pocket"
-#    icon = "fab fa-get-pocket"
-#    url = "https://getpocket.com/edit?url=%s"
-#
-#  [[params.sharingOptions]]
-#    name = "Hacker News"
-#    icon = "fab fa-hacker-news"
-#    url = "https://news.ycombinator.com/submitlink?u=%s"
+  [[params.sharingOptions]]
+    name = "Pocket"
+    icon = "fab fa-get-pocket"
+    url = "https://getpocket.com/edit?url=%s"
+
 
   # -------------------
   # Integrated services
@@ -336,7 +330,7 @@ canonifyurls = true
   #      gravatarEmail =
   # Google Analytics
   #  >> See googleAnalytics
-  #    googleAnalytics =
+  #    googleAnalytics = "G-GQP7Q11D2F"
   # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
   #  fbAdminIds =
   # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
@@ -348,7 +342,7 @@ canonifyurls = true
   [params.comment]
     [params.comment.disqus]
       enable = true
-      shortname = "hugo-tranquilpeak-theme"
+      shortname = "kylelu"
     [params.comment.gitalk]
       enable = false
       # clientId =

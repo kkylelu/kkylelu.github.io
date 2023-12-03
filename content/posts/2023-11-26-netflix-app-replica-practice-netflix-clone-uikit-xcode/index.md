@@ -163,9 +163,6 @@ tags:
 
 ![Simulator Screen Recording - iPhone 15 Pro - 2023-11-20 at 23.46.13.gif](Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20-%202023-11-20%20at%2023.46.13.gif)
 
-![KLix_11月25日.gif](KLix_11月25日.gif)
-*第一版與目前版本對比*
-
 
 
 對比我的第一版畫面，其實我原本單純想照著 Figma 的範例做，因為設計師都已經把料備好了，我就不用煩惱內容，專心疊積木就好。
