@@ -6,8 +6,25 @@
     <description>Recent content on 凱爾鹿數位生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 26 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kylelu.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>新海誠電影 app｜page control, button, gesture, AVFoundation</title>
+      <link>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;知道生命很短暫，我知道死亡隨時會來臨，即使如此，再一年、再一天，就算只是再一小時，我們都想活下去！&lt;br&gt;
+——《鈴芽之旅》&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Hugo TOC 階層設定：讓文章目錄從正確的地方開始</title>
+      <link>https://kylelu.com/2023-12-06-hugo-toc-level-configuration-start-right/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023-12-06-hugo-toc-level-configuration-start-right/</guid>
+      <description>&lt;p&gt;套用 hugo-tranquilpeak-theme 這個佈景主題的 TOC 之後，發現目錄（TOC）怪怪的，它會空出一個莫名的階層，像是故意留位置給 H1 標題，但我的文章標題通常是從 H2 開始。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode</title>
       <link>https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/</link>
