@@ -381,5 +381,5 @@ canonifyurls = true
   # Footer configuration
   # --------------------
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
-  #  [params.footer]
-  #    copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+    [params.footer]
+      copyright = "© 2024 Kyle Lu｜凱爾鹿. All Rights Reserved"
