@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>作品 on 凱爾鹿數位生活</title>
+    <link>https://kylelu.com/categories/%E4%BD%9C%E5%93%81/</link>
+    <description>Recent content in 作品 on 凱爾鹿數位生活</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kylelu.com/categories/%E4%BD%9C%E5%93%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>新海誠電影 app｜page control, button, gesture, AVFoundation</title>
+      <link>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;知道生命很短暫，我知道死亡隨時會來臨，即使如此，再一年、再一天，就算只是再一小時，我們都想活下去！&lt;br&gt;
+——《鈴芽之旅》&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode</title>
+      <link>https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/</link>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023/11/26/netflix-app-replica-practice-netflix-clone-uikit-xcode/</guid>
+      <description>&lt;p&gt;身為資深劇迷，Netflix 可以說是我的第三個家（第一個家是史萊姆，第二個是動畫瘋～巴哈我大哥）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>番茄鐘 – 專注草原｜Timer, Player</title>
+      <link>https://kylelu.com/2023/10/09/pomodoro-timer-focus-on-wild/</link>
+      <pubDate>Mon, 09 Oct 2023 04:52:22 +0000</pubDate>
+      <guid>https://kylelu.com/2023/10/09/pomodoro-timer-focus-on-wild/</guid>
+      <description>&lt;p&gt;一款簡約的番茄鐘 APP，讓你在令人心曠神怡的專注草原上，每次前進一小步，並在蟲鳴鳥叫聲中小憩片刻。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>今天午餐吃什麼？Array、Int random 練習</title>
+      <link>https://kylelu.com/2023/08/22/whatsforlunch-arrayint-random/</link>
+      <pubDate>Tue, 22 Aug 2023 08:34:51 +0000</pubDate>
+      <guid>https://kylelu.com/2023/08/22/whatsforlunch-arrayint-random/</guid>
+      <description>&lt;p&gt;辦公室總是有午餐選擇困難症？點點按鈕找靈感吧！&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -309,7 +309,6 @@ canonifyurls = true
 #    icon = "fab fa-whatsapp"
 #    url = "https://wa.me/?text=%s"
 
-
   [[params.sharingOptions]]
     name = "Linkedin"
     icon = "fab fa-linkedin"
