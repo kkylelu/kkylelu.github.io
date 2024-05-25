@@ -5,12 +5,12 @@ url: /2023/09/09/how-to-copy-title-and-url-in-arc-browser-using-markdown/
 thumbnailImagePosition: left
 thumbnailImage: /images/K.Lu-230909.avif
 categories:
-  - 數位工具應用
-  - 科技
+  - 生產力
 tags:
   - Arc
   - 外掛
   - 瀏覽器
+  - 數位工具應用
 
 ---
 教你如何在 Arc 瀏覽器中透過「Copy as Markdown」擴充外掛，同時複製網頁的標題和網址。

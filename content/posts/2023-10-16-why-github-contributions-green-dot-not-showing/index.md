@@ -7,7 +7,6 @@ thumbnailImagePosition: left
 thumbnailImage: /images/K.Lu-231016.avif
 categories:
   - Swift 學習筆記
-  - 科技
 tags:
   - contributions
   - GitHub

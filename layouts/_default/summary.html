@@ -40,6 +40,7 @@
       </a>
     {{ end }}
     <div class="postShorten-header">
+      {{ template "_internal/google_analytics.html" . }}
       <h1 class="postShorten-title">
       {{ with .Params.link }}
         <a class="link-unstyled" href="{{ . | absURL }}" aria-label="{{ if i18n "global.open_post" }}{{ i18n "global.open_post" }}: {{ .Title }}{{ end }}" target="_blank">

@@ -6,7 +6,7 @@ thumbnailImagePosition: left
 thumbnailImage: /images/K.Lu-231009.avif
 categories:
   - Swift 學習筆記
-  - 科技
+  - 作品
 tags:
   - player
   - pomodoro

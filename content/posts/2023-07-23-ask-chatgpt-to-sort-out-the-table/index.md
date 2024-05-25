@@ -5,13 +5,14 @@ thumbnailImagePosition: left
 thumbnailImage: /images/K.Lu-230723.avif
 url: 2023-07-23-ask-chatgpt-to-sort-out-the-table
 categories:
-  - 工作術
-  - 數位工具應用
+  - 生產力
 tags:
   - AI
   - ChatGPT
   - 摘要重點
   - 表格
+  - 工作術
+  - 數位工具應用
 
 ---
 比起長篇大論，想快速掌握重點時，可以請 ChatGPT 直接整理表格給我們。

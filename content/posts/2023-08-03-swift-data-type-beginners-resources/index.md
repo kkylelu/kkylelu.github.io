@@ -6,7 +6,6 @@ thumbnailImage: /images/K.Lu-230803.avif
 url: /2023/08/03/swift-data-type-beginners-resources/
 categories:
   - Swift 學習筆記
-  - 科技
 tags:
   - ios
   - swift

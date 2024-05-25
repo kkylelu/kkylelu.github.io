@@ -70,6 +70,8 @@
     
       <meta property="article:section" content="Swift 學習筆記">
     
+      <meta property="article:section" content="作品">
+    
   
   
     
@@ -126,6 +128,17 @@
 
     
       
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQP7Q11D2F"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-GQP7Q11D2F', { 'anonymize_ip': false });
+}
+</script>
+
     
     
   </head>
@@ -151,6 +164,18 @@
     </a>
   
 </header>
+
+      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQP7Q11D2F"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-GQP7Q11D2F', { 'anonymize_ip': false });
+}
+</script>
 
       <nav id="sidebar" data-behavior="5">
   <div class="sidebar-container">
@@ -289,7 +314,9 @@
   
     <span>分類</span>
     
-      <a class="category-link" href="https://kylelu.com/categories/swift-%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">Swift 學習筆記</a>
+      <a class="category-link" href="https://kylelu.com/categories/swift-%e5%ad%b8%e7%bf%92%e7%ad%86%e8%a8%98">Swift 學習筆記</a>, 
+    
+      <a class="category-link" href="https://kylelu.com/categories/%e4%bd%9c%e5%93%81">作品</a>
     
   
 
@@ -303,25 +330,21 @@
 <h1 id="table-of-contents">目錄</h1>
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#學習目標">學習目標</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#開發階段">開發階段</a>
       <ul>
-        <li><a href="#學習目標">學習目標</a></li>
-        <li><a href="#demo">Demo</a></li>
-        <li><a href="#開發階段">開發階段</a>
-          <ul>
-            <li><a href="#第一步挑選設計稿">第一步：挑選設計稿</a></li>
-            <li><a href="#第二步設計基礎框架">第二步：設計基礎框架</a></li>
-            <li><a href="#第三步美化設計細節">第三步：美化設計細節</a></li>
-            <li><a href="#第四步串接不同頁面">第四步：串接不同頁面</a></li>
-          </ul>
-        </li>
-        <li><a href="#開發小結">開發小結</a></li>
-        <li><a href="#storyboard-佈局大合照">Storyboard 佈局大合照</a></li>
-        <li><a href="#github-交作業">Github 交作業</a></li>
-        <li><a href="#參考文件">參考文件</a></li>
-        <li><a href="#版權聲明">版權聲明</a></li>
+        <li><a href="#第一步挑選設計稿">第一步：挑選設計稿</a></li>
+        <li><a href="#第二步設計基礎框架">第二步：設計基礎框架</a></li>
+        <li><a href="#第三步美化設計細節">第三步：美化設計細節</a></li>
+        <li><a href="#第四步串接不同頁面">第四步：串接不同頁面</a></li>
       </ul>
     </li>
+    <li><a href="#開發小結">開發小結</a></li>
+    <li><a href="#storyboard-佈局大合照">Storyboard 佈局大合照</a></li>
+    <li><a href="#github-交作業">Github 交作業</a></li>
+    <li><a href="#參考文件">參考文件</a></li>
+    <li><a href="#版權聲明">版權聲明</a></li>
   </ul>
 </nav>
 
@@ -424,7 +447,6 @@
 <p><strong>第一版和目前畫面對比</strong></p>
 <p>這是我的第一版畫面，其實我原本單純想照著 Figma 的範例做，因為設計師都已經把料備好了，我就不用煩惱內容，專心疊積木就好。</p>
 <p><img src="Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20-%202023-11-20%20at%2023.46.13.gif" alt="Simulator Screen Recording - iPhone 15 Pro - 2023-11-20 at 23.46.13.gif"></p>
-<p>對比我的第一版畫面，其實我原本單純想照著 Figma 的範例做，因為設計師都已經把料備好了，我就不用煩惱內容，專心疊積木就好。</p>
 <p>只是看到同學們陸續都上傳作業了，讓我開始思考人生想到其實既然要做，跟著目前最新的 UI 做，雖然比較有挑戰性，但更有趣、更有現代感！就決定調整首頁主視覺。</p>
 <p>如果再做一次，我會特別留意素材、元件和 view 這幾點（那不就是全部了嗎？）：</p>
 <p><strong>素材相關</strong></p>
@@ -522,7 +544,7 @@
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--disabled">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023-12-06-hugo-toc-level-configuration-start-right/" data-tooltip="Hugo TOC 階層設定：讓文章目錄從正確的地方開始" aria-label="下一篇: Hugo TOC 階層設定：讓文章目錄從正確的地方開始">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -635,7 +657,7 @@
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--disabled">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://kylelu.com/2023-12-06-hugo-toc-level-configuration-start-right/" data-tooltip="Hugo TOC 階層設定：讓文章目錄從正確的地方開始" aria-label="下一篇: Hugo TOC 階層設定：讓文章目錄從正確的地方開始">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>

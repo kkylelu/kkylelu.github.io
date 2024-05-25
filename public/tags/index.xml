@@ -6,8 +6,50 @@
     <description>Recent content in Tags on 凱爾鹿數位生活</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 26 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kylelu.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AVFoundation</title>
+      <link>https://kylelu.com/tags/avfoundation/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/tags/avfoundation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>gesture</title>
+      <link>https://kylelu.com/tags/gesture/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/tags/gesture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>page control</title>
+      <link>https://kylelu.com/tags/page-control/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/tags/page-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>shinkai</title>
+      <link>https://kylelu.com/tags/shinkai/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/tags/shinkai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://kylelu.com/tags/hugo/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TOC</title>
+      <link>https://kylelu.com/tags/toc/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/tags/toc/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cloneapp</title>
       <link>https://kylelu.com/tags/cloneapp/</link>
@@ -149,6 +191,13 @@
       <description></description>
     </item>
     <item>
+      <title>數位工具應用</title>
+      <link>https://kylelu.com/tags/%E6%95%B8%E4%BD%8D%E5%B7%A5%E5%85%B7%E6%87%89%E7%94%A8/</link>
+      <pubDate>Sat, 09 Sep 2023 05:11:29 +0000</pubDate>
+      <guid>https://kylelu.com/tags/%E6%95%B8%E4%BD%8D%E5%B7%A5%E5%85%B7%E6%87%89%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>瀏覽器</title>
       <link>https://kylelu.com/tags/%E7%80%8F%E8%A6%BD%E5%99%A8/</link>
       <pubDate>Sat, 09 Sep 2023 05:11:29 +0000</pubDate>
@@ -163,10 +212,10 @@
       <description></description>
     </item>
     <item>
-      <title>練習作品</title>
-      <link>https://kylelu.com/tags/%E7%B7%B4%E7%BF%92%E4%BD%9C%E5%93%81/</link>
-      <pubDate>Tue, 22 Aug 2023 08:34:51 +0000</pubDate>
-      <guid>https://kylelu.com/tags/%E7%B7%B4%E7%BF%92%E4%BD%9C%E5%93%81/</guid>
+      <title>sdk</title>
+      <link>https://kylelu.com/tags/sdk/</link>
+      <pubDate>Mon, 21 Aug 2023 16:22:40 +0000</pubDate>
+      <guid>https://kylelu.com/tags/sdk/</guid>
       <description></description>
     </item>
     <item>
@@ -188,6 +237,13 @@
       <link>https://kylelu.com/tags/chatgpt/</link>
       <pubDate>Sat, 22 Jul 2023 17:27:33 +0000</pubDate>
       <guid>https://kylelu.com/tags/chatgpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>工作術</title>
+      <link>https://kylelu.com/tags/%E5%B7%A5%E4%BD%9C%E8%A1%93/</link>
+      <pubDate>Sat, 22 Jul 2023 17:27:33 +0000</pubDate>
+      <guid>https://kylelu.com/tags/%E5%B7%A5%E4%BD%9C%E8%A1%93/</guid>
       <description></description>
     </item>
     <item>

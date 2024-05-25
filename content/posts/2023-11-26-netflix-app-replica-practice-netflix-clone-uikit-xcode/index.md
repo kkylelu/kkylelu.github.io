@@ -7,6 +7,7 @@ thumbnailImagePosition: left
 thumbnailImage: /images/K-Lix Icon Design.avif
 categories:
   - Swift 學習筆記
+  - 作品
 tags:
   - Xcode
   - Netflix
@@ -163,9 +164,6 @@ tags:
 
 ![Simulator Screen Recording - iPhone 15 Pro - 2023-11-20 at 23.46.13.gif](Simulator%20Screen%20Recording%20-%20iPhone%2015%20Pro%20-%202023-11-20%20at%2023.46.13.gif)
 
-
-
-對比我的第一版畫面，其實我原本單純想照著 Figma 的範例做，因為設計師都已經把料備好了，我就不用煩惱內容，專心疊積木就好。
 
 只是看到同學們陸續都上傳作業了，讓我開始思考人生想到其實既然要做，跟著目前最新的 UI 做，雖然比較有挑戰性，但更有趣、更有現代感！就決定調整首頁主視覺。
 

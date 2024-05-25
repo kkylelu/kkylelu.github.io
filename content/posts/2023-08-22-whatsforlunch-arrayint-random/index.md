@@ -6,11 +6,10 @@ thumbnailImagePosition: left
 thumbnailImage: /images/K.Lu-230822.avif
 categories:
   - Swift 學習筆記
-  - 科技
+  - 作品
 tags:
   - ios
   - swift
-  - 練習作品
 
 ---
 辦公室總是有午餐選擇困難症？點點按鈕找靈感吧！

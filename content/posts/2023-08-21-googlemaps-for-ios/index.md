@@ -6,11 +6,10 @@ date: 2023-08-21T16:22:40+00:00
 url: /2023/08/21/googlemaps-for-ios/
 categories:
   - Swift 學習筆記
-  - 科技
 tags:
   - ios
   - swift
-  - 練習作品
+  - sdk
 
 ---
 練習在 iOS APP 串接 Google maps，學習安裝 Google Maps for iOS SDK

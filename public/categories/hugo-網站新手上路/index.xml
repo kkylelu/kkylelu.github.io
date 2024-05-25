@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo 網站新手上路 on 凱爾鹿數位生活</title>
+    <link>https://kylelu.com/categories/hugo-%E7%B6%B2%E7%AB%99%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF/</link>
+    <description>Recent content in Hugo 網站新手上路 on 凱爾鹿數位生活</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 06 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kylelu.com/categories/hugo-%E7%B6%B2%E7%AB%99%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo TOC 階層設定：讓文章目錄從正確的地方開始</title>
+      <link>https://kylelu.com/2023-12-06-hugo-toc-level-configuration-start-right/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2023-12-06-hugo-toc-level-configuration-start-right/</guid>
+      <description>&lt;p&gt;套用 hugo-tranquilpeak-theme 這個佈景主題的 TOC 之後，發現目錄（TOC）怪怪的，它會空出一個莫名的階層，像是故意留位置給 H1 標題，但我的文章標題通常是從 H2 開始。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

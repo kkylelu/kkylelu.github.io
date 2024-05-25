@@ -38,7 +38,7 @@ canonifyurls = true
   [markup.tableOfContents]
     endLevel = 3
     ordered = false
-    startLevel = 1
+    startLevel = 2
 
 # ------
 # Author
@@ -328,9 +328,14 @@ canonifyurls = true
   #  >> See Author section
   #    [author]
   #      gravatarEmail =
-  # Google Analytics
+  #    Google Analytics
   #  >> See googleAnalytics
-  #    googleAnalytics = "G-GQP7Q11D2F"
+  #    googleAnalytics ="G-GQP7Q11D2F"
+  # [params.googleAnalytics]
+  # async = true
+  [services]
+  [services.googleAnalytics]
+  ID = 'G-GQP7Q11D2F'
   # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
   #  fbAdminIds =
   # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307

@@ -5,12 +5,13 @@ thumbnailImagePosition: left
 thumbnailImage: /images/K.Lu-230617.avif
 url: 2023-06-17-create-game-style-background-with-free-ai-image-generator
 categories:
-  - 數位工具應用
+  - 生產力
 tags:
   - AI
   - ChatGPT
   - DALLE
   - Photoshop
+  - 數位工具應用
 
 ---
 
