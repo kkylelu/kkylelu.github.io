@@ -4,7 +4,7 @@ date: 2023-12-07
 excerpt: 
 url: 2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation
 autoThumbnailImage: false
-thumbnailImagePosition: "top"
+thumbnailImagePosition: left
 thumbnailImage: /2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/shinkaiMovie_cover3.avif
 metaAlignment: center
 categories:

@@ -43,7 +43,7 @@ canonifyurls = true
 # ------
 # Author
 # ------
-[author]
+[params.author]
   name = "Kyle Lu｜凱爾鹿"
   bio = "培養思維、掌握工具，打造滿意生活"
   job = "Problem solver"
