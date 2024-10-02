@@ -17,11 +17,14 @@ languageCode = "zh-tw"
 defaultContentLanguage = "zh-tw"
 title = "凱爾鹿數位生活"
 theme = "hugo-tranquilpeak-theme"
-disqusShortname = "hugo-tranquilpeak-theme"
-# googleAnalytics = "G-GQP7Q11D2F"
-[params.pagination]
 paginate = 7
 canonifyurls = true
+
+[services]
+  [services.disqus]
+    shortname = "hugo-tranquilpeak-theme"
+  [services.googleAnalytics]
+    ID = 'G-GQP7Q11D2F'
 
 [permalinks]
   posts = "/:year/:month/:slug/"
@@ -333,9 +336,6 @@ canonifyurls = true
   #    googleAnalytics ="G-GQP7Q11D2F"
   # [params.googleAnalytics]
   # async = true
-  [services]
-  [services.googleAnalytics]
-  ID = 'G-GQP7Q11D2F'
   # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
   #  fbAdminIds =
   # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307

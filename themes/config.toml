@@ -17,7 +17,9 @@ languageCode = "zh-tw"
 defaultContentLanguage = "zh-tw"
 title = "Hugo tranquilpeak theme"
 theme = "hugo-tranquilpeak-theme"
-disqusShortname = "hugo-tranquilpeak-theme"
+[services]
+  [services.disqus]
+    shortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
