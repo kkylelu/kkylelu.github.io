@@ -19,6 +19,7 @@ title = "凱爾鹿數位生活"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "G-GQP7Q11D2F"
+[params.pagination]
 paginate = 7
 canonifyurls = true
 
