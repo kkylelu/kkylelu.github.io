@@ -17,7 +17,9 @@ languageCode = "zh-tw"
 defaultContentLanguage = "zh-tw"
 title = "凱爾鹿數位生活"
 theme = "hugo-tranquilpeak-theme"
-paginate = 7
+
+[pagination]
+pagerSize = 7
 canonifyurls = true
 
 [services]
