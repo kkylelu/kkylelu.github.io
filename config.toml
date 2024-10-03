@@ -24,7 +24,7 @@ canonifyurls = true
 
 [services]
   [services.disqus]
-    shortname = "hugo-tranquilpeak-theme"
+    shortname = "kylelu"
   [services.googleAnalytics]
     ID = 'G-GQP7Q11D2F'
 
