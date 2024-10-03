@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>page control on 凱爾鹿數位生活</title>
+    <title>Page Control on 凱爾鹿數位生活</title>
     <link>https://kylelu.com/tags/page-control/</link>
-    <description>Recent content in page control on 凱爾鹿數位生活</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Page Control on 凱爾鹿數位生活</description>
+    <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kylelu.com/tags/page-control/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,7 @@
       <link>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;知道生命很短暫，我知道死亡隨時會來臨，即使如此，再一年、再一天，就算只是再一小時，我們都想活下去！&lt;br&gt;
-——《鈴芽之旅》&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;知道生命很短暫，我知道死亡隨時會來臨，即使如此，再一年、再一天，就算只是再一小時，我們都想活下去！&lt;br&gt;&#xA;——《鈴芽之旅》&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>

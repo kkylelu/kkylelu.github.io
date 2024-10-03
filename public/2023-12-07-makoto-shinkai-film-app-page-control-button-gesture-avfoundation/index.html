@@ -35,7 +35,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.120.4 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="generator" content="Hugo 0.135.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="">
 <meta name="keywords" content="">
 <meta name="description" content="
@@ -128,17 +128,20 @@
 
     
       
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQP7Q11D2F"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-GQP7Q11D2F', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQP7Q11D2F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GQP7Q11D2F');
+        }
+      </script>
     
     
   </head>
@@ -164,17 +167,20 @@ if (!doNotTrack) {
 </header>
 
       
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQP7Q11D2F"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-GQP7Q11D2F', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQP7Q11D2F"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GQP7Q11D2F');
+        }
+      </script>
       <nav id="sidebar" data-behavior="5">
   <div class="sidebar-container">
     
@@ -360,9 +366,12 @@ if (!doNotTrack) {
 <p><img src="Shinkai.gif" alt="Shinkai.gif">
 <em>操作示範 GIF</em></p>
 <p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/qIU8fYGzWWo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qIU8fYGzWWo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <em>操作示範搭配音樂（注意影片音量）</em></p>
 <h2 id="開發過程">開發過程</h2>
@@ -393,28 +402,28 @@ if (!doNotTrack) {
 </ul>
 <p>請 GPT 整理成表格說明：</p>
 <table>
-<thead>
-<tr>
-<th><strong>操作</strong></th>
-<th><strong>代碼</strong></th>
-<th><strong>邏輯說明</strong></th>
-<th><strong>示例（假設 movie.count = 3）</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>下一部電影</td>
-<td><strong><code>(index + 1) % movie.count</code></strong></td>
-<td>將索引增加 1，然後用電影總數取餘數以循環回到開始位置</td>
-<td>如果索引為 2，下一個索引為 (2 + 1) % 3 = 0</td>
-</tr>
-<tr>
-<td>上一部電影</td>
-<td><strong><code>(index + movie.count - 1) % movie.count</code></strong></td>
-<td>將電影總數加到索引上，減去 1，然後取餘數以處理負索引情況</td>
-<td>如果索引為 0，下一個索引為 (0 + 3 - 1) % 3 = 2</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>操作</strong></th>
+          <th style="text-align: left"><strong>代碼</strong></th>
+          <th style="text-align: left"><strong>邏輯說明</strong></th>
+          <th style="text-align: left"><strong>示例（假設 movie.count = 3）</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">下一部電影</td>
+          <td style="text-align: left"><strong><code>(index + 1) % movie.count</code></strong></td>
+          <td style="text-align: left">將索引增加 1，然後用電影總數取餘數以循環回到開始位置</td>
+          <td style="text-align: left">如果索引為 2，下一個索引為 (2 + 1) % 3 = 0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">上一部電影</td>
+          <td style="text-align: left"><strong><code>(index + movie.count - 1) % movie.count</code></strong></td>
+          <td style="text-align: left">將電影總數加到索引上，減去 1，然後取餘數以處理負索引情況</td>
+          <td style="text-align: left">如果索引為 0，下一個索引為 (0 + 3 - 1) % 3 = 2</td>
+      </tr>
+  </tbody>
 </table>
 <p>寫成 swift 會長這樣：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">// 下一部電影</span>

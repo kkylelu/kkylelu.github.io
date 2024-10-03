@@ -4,7 +4,7 @@
     <title>Swift 學習筆記 on 凱爾鹿數位生活</title>
     <link>https://kylelu.com/categories/swift-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/</link>
     <description>Recent content in Swift 學習筆記 on 凱爾鹿數位生活</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kylelu.com/categories/swift-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,7 @@
       <link>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;知道生命很短暫，我知道死亡隨時會來臨，即使如此，再一年、再一天，就算只是再一小時，我們都想活下去！&lt;br&gt;
-——《鈴芽之旅》&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;知道生命很短暫，我知道死亡隨時會來臨，即使如此，再一年、再一天，就算只是再一小時，我們都想活下去！&lt;br&gt;&#xA;——《鈴芽之旅》&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>復刻 Netflix APP 初步練習｜Netflix clone, UIkit, xcode</title>
