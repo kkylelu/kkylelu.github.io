@@ -8,27 +8,40 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: 'Asia/Taipei'
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        submodules: true  # 確保檢出子模組
-
-    - name: Update submodules
-      run: git submodule update --init --recursive
+        submodules: recursive
 
     - name: Set up Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: 'latest'
+        hugo-version: '0.135.0'
 
     - name: Build
-      run: hugo --minify
+      run: |
+        hugo version
+        hugo --minify
+        ls -R public
+
+    - name: Debug info
+      run: |
+        pwd
+        ls -la
+        git status
+
+    - name: Check public directory
+      run: |
+        ls -R public
+        cat public/index.html || echo "index.html not found"
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.GH_PAGES_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-
+        publish_branch: gh-pages
