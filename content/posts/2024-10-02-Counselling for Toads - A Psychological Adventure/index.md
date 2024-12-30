@@ -4,7 +4,7 @@ date: 2024-10-02
 excerpt: 
 url: 2024-10-02-Counselling for Toads - A Psychological Adventure
 autoThumbnailImage: false
-thumbnailImagePosition: "top"
+thumbnailImagePosition: "left"
 thumbnailImage: /2024-10-02-Counselling for Toads - A Psychological Adventure/2024-10-02.avif
 metaAlignment: center
 categories:

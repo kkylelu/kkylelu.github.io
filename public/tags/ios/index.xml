@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ios on 凱爾鹿數位生活</title>
+    <title>IOS on 凱爾鹿數位生活</title>
     <link>https://kylelu.com/tags/ios/</link>
-    <description>Recent content in Ios on 凱爾鹿數位生活</description>
+    <description>Recent content in IOS on 凱爾鹿數位生活</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 22 Aug 2023 08:34:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kylelu.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>關於文組轉職 iOS 工程師這檔事</title>
+      <link>https://kylelu.com/2024-12-30-humanities-to-ios-engineer/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2024-12-30-humanities-to-ios-engineer/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;「欸？我現在的工作好像有 1/3 都能用 ChatGPT 做了！」&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
     <item>
       <title>今天午餐吃什麼？Array、Int random 練習</title>
       <link>https://kylelu.com/2023/08/22/whatsforlunch-arrayint-random/</link>

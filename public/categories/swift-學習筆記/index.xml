@@ -6,8 +6,15 @@
     <description>Recent content in Swift 學習筆記 on 凱爾鹿數位生活</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kylelu.com/categories/swift-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>關於文組轉職 iOS 工程師這檔事</title>
+      <link>https://kylelu.com/2024-12-30-humanities-to-ios-engineer/</link>
+      <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://kylelu.com/2024-12-30-humanities-to-ios-engineer/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;「欸？我現在的工作好像有 1/3 都能用 ChatGPT 做了！」&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
     <item>
       <title>新海誠電影 app｜page control, button, gesture, AVFoundation</title>
       <link>https://kylelu.com/2023-12-07-makoto-shinkai-film-app-page-control-button-gesture-avfoundation/</link>
